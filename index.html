@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Fun Quiz</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Section 1</h2>
+                <div>
+                    <h3>Div 1</h3>
+                    <p>This is a fun quiz</p>
+                </div>
+                <div>
+                    <h3>Div 2</h3>
+                    <img src="quiz.webp" alt="" />
+                </div>
+            </section>
+            <section>
+                <h2>Section 2</h2>
+                <form action="">
+                    <h3>Form</h3>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+
+                    <input type="radio" id="male" name="gender" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" />
+                    <label for="female">Female</label>
+
+                    <p>Pick your superpower for a day!</p>
+                    <input type="radio" id="invisibilty" name="gender" />
+                    <label for="invisibilty">🕶️ Invisibilty </label>
+                    <input type="radio" id="flying" name="gender" />
+                    <label for="flying">🦸 Flying</label>
+                    <input type="radio" id="mind-reaading" name="gender" />
+                    <label for="mind-reaading">🧠 Mind reading</label>
+
+                    <p>
+                        What date will you achieve your biggest dream? Predict
+                        the future!
+                    </p>
+                    <input type="date" />
+
+                    <p>
+                        What’s your confidence level in meeting aliens? (0:
+                        "Terrified 👀" → 10: "Take me to your leader! 🛸")
+                    </p>
+                    <input
+                        type="range"
+                        id="slider"
+                        min="0"
+                        max="10"
+                        step="1"
+                        value="5"
+                        oninput="this.nextElementSibling.value = this.value"
+                    />
+                    <output for="slider">5</output>
+
+                    <p>What types of movies do you enjoy watching?</p>
+
+                    <input type="checkbox" id="comedy" />
+                    <label for="comedy">😂 Comedy</label>
+
+                    <input type="checkbox" id="action" />
+                    <label for="action">🎬 Action</label>
+
+                    <input type="checkbox" id="thriller" />
+                    <label for="thriller">🔐 Thriller</label>
+
+                    <input type="checkbox" id="fantasy" />
+                    <label for="fantasy">🏰 Fantasy</label>
+
+                    <p>Pick a color for your favorite holiday decorations:</p>
+                    <input type="color" />
+
+                    <button type="button">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>2024 Future Coders Lab</p>
+        </footer>
+    </body>
+</html>
