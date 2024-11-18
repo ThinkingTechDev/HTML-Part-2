@@ -31,12 +31,6 @@
                     <input type="email" placeholder="Email" />
 
                     <p>
-                        What date will you achieve your biggest dream? Predict
-                        the future!
-                    </p>
-                    <input type="date" />
-
-                    <p>
                         What’s your confidence level in meeting aliens? (0:
                         "Terrified 👀" → 10: "Take me to your leader! 🛸")
                     </p>
@@ -47,9 +41,7 @@
                         max="10"
                         step="1"
                         value="5"
-                        oninput="this.nextElementSibling.value = this.value"
                     />
-                    <output for="slider">5</output>
 
                     <p>Pick your superpower for a day!</p>
                     <input type="radio" id="superpower-1" name="superpower" />
@@ -75,6 +67,12 @@
 
                     <p>Pick a color for your favorite holiday decorations:</p>
                     <input type="color" />
+
+                    <p>
+                        What date will you achieve your next dream? Predict the
+                        future!
+                    </p>
+                    <input type="date" />
 
                     <button type="button">Submit</button>
                 </form>
