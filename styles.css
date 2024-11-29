@@ -157,7 +157,9 @@ input[type="checkbox"] {
 }
 
 button {
+    width: 100px;
     display: block;
+    align-self: center;
     margin-top: 20px;
     background-color: #007bff;
     color: #fff;
@@ -175,6 +177,10 @@ button:hover {
 
 button:active {
     transform: scale(0.98);
+}
+
+button[type="reset"] {
+    background-color: red;
 }
 
 footer {
