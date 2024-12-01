@@ -72,11 +72,8 @@ ol {
     padding: 15px 20px;
     color: black;
 }
-
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
+iframe {
+    border: 0;
 }
 form {
     background-color: #28c09a;
@@ -92,7 +89,10 @@ form > div {
 }
 
 input[type="email"],
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
+    margin-top: 5px;
+    /* margin-right: 250px; */
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -155,7 +155,21 @@ input[type="checkbox"] {
     cursor: pointer;
     vertical-align: sub;
 }
-
+textarea {
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+    width: 350px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+label {
+    cursor: pointer;
+}
 button {
     width: 100px;
     display: block;
