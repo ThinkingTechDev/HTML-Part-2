@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fun Quiz</title>
+        <title>Random Questions</title>
         <script src="script.js" defer></script>
     </head>
     <body>
         <header>
-            <h1>Fun Quiz</h1>
+            <h1>Questions Of The Day</h1>
         </header>
 
         <main>
@@ -16,19 +16,30 @@
                 <h2>Section 1</h2>
                 <div>
                     <h3>Div 1</h3>
-                    <p>This is a fun quiz</p>
+                    <p>My favorite song is</p>
                 </div>
                 <div>
                     <h3>Div 2</h3>
-                    <img src="quiz.webp" alt="" />
+                    <iframe
+                        width="520"
+                        height="360"
+                        src="https://www.youtube.com/embed/6DrNC-xQcGs"
+                    ></iframe>
                 </div>
             </section>
             <section>
                 <h2>Section 2</h2>
                 <form action="">
                     <h3>Form</h3>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="Name" required />
+                    <input type="email" placeholder="Email" required />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        minlength="3"
+                        maxlength="16"
+                        required
+                    />
 
                     <p>
                         What’s your confidence level in meeting aliens? (0:
@@ -58,16 +69,17 @@
                     <input type="checkbox" id="fantasy" />
                     <label for="fantasy">🏰 Fantasy</label>
 
-                    <p>Pick a color for your favorite animal</p>
+                    <p>Pick your favorite color!</p>
                     <input type="color" />
 
                     <p>
-                        What date will you achieve your next dream? Predict the
+                        What date will you achieve your next goal? Predict the
                         future!
                     </p>
                     <input type="date" />
+                    <textarea placeholder="What is your goal?"></textarea>
 
-                    <button type="button">Submit</button>
+                    <button type="submit">Submit</button>
                     <button type="reset">Reset</button>
                 </form>
             </section>
